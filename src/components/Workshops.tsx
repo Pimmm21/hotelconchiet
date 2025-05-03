@@ -1,35 +1,38 @@
 import React from 'react';
 import { SectionTitle } from './ui/SectionTitle';
 import { ChefHat, Calendar } from 'lucide-react';
+import Kookworkshop from '../assets/Kookworkshop.jpg';
+import Taartworkshop from '../assets/Taartworkshop.jpg';
+import Feestworkshop from '../assets/Feestworkshop.jpg';
 
 export const Workshops = () => {
   const workshops = [
     {
       id: 1,
       name: "Mama's Kookcursus",
-      description: "Leer de geheimen van mama's beroemde keuken. Van gehaktballen tot appeltaart, alle klassiekers komen aan bod.",
-      image: "https://images.pexels.com/photos/4252137/pexels-photo-4252137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description: "Leer de geheimen van mama's beroemde keuken. Van paella tot beef tataki, alle klassiekers komen aan bod.",
+      image: Kookworkshop,
       duration: "3 uur",
       participants: "Max. 6 personen",
-      upcoming: "Elke eerste zaterdag van de maand"
+      upcoming: "Speciale gelegenheden"
     },
     {
       id: 2,
-      name: "Bakkerij Workshops",
-      description: "Kom gezellig bakken in de keuken van Hotel Conchiet. Taarten, koekjes en brood komen allemaal aan bod.",
-      image: "https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Taart Workshops",
+      description: "Kom gezellig bakken in de keuken van Hotel Conchiet met jaren lange ervaring bij de Taartwinkel is dit een gegarandeerd succes.",
+      image: Taartworkshop,
       duration: "4 uur",
       participants: "Max. 4 personen",
-      upcoming: "Elke derde zondag van de maand"
+      upcoming: "Op verzoek"
     },
     {
       id: 3,
-      name: "Feestdagen Specials",
-      description: "Speciale workshop voor het bereiden van feestelijke maaltijden. Leer hoe je de perfecte kerstdiner of paaslunch klaarmaakt.",
-      image: "https://images.pexels.com/photos/5760860/pexels-photo-5760860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Feesten organiseren",
+      description: "Speciale workshop voor het geven van onvergetelijke feesten. Leer hoe de feestjes van ons Conchiet gepland worden",
+      image: Feestworkshop,
       duration: "5 uur",
       participants: "Max. 8 personen",
-      upcoming: "Seizoensgebonden"
+      upcoming: "Heel lief vragen"
     }
   ];
 

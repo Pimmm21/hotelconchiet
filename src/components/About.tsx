@@ -1,5 +1,6 @@
 import React from 'react';
 import { SectionTitle } from './ui/SectionTitle';
+import Overons from '../assets/Overons.jpg';
 
 export const About = () => {
   return (
@@ -14,7 +15,7 @@ export const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
           <div>
             <img 
-              src="https://images.pexels.com/photos/3768895/pexels-photo-3768895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+              src={Overons} 
               alt="Warme familiemomenten" 
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
@@ -25,6 +26,9 @@ export const About = () => {
             <div className="space-y-4 text-gray-100">
               <p>
                 Hotel Conchiet werd opgericht in 1965, toen onze geliefde gastvrouw, Mama, werd geboren. Sinds die dag heeft ze haar deuren opengesteld voor familie, vrienden en iedereen die een warm thuis nodig heeft.
+              </p>
+              <p>
+                Deze gastvrijheid is al generaties onderdeel van de familie. Hoewel Conchiet een unieke gastvrouw is, is ze niet de enige in haar familie die gastvrijheid belangrijk vindt en goed voor hun familie en vrienden zorgt.
               </p>
               <p>
                 In de afgelopen 60 jaar is Hotel Conchiet uitgegroeid tot meer dan alleen een huis. Het is een toevluchtsoord geworden waar je altijd welkom bent, waar de koffie altijd klaarstaat en waar liefde en zorg de belangrijkste voorzieningen zijn.
