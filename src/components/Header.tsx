@@ -27,6 +27,7 @@ export const Header = () => {
     { id: 'menu', name: 'Menukaart' },
     { id: 'gallery', name: 'Hall of Fame' },
     { id: 'workshops', name: 'Workshops' },
+    { id: 'letters', name: 'Lieve Woorden' }
   ];
 
   const scrollToSection = (id: string) => {

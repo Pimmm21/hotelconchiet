@@ -14,6 +14,7 @@ import { Faq } from './components/Faq';
 import { Menu } from './components/Menu';
 import { Gallery } from './components/Gallery';
 import { Workshops } from './components/Workshops';
+import { Letters } from './components/Letters';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Menu />
         <Gallery />
         <Workshops />
+        <Letters />
       </main>
       <Footer />
     </div>

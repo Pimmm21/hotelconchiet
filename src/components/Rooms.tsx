@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bed, Coffee, Wifi } from 'lucide-react';
+import { Bed, Coffee, Wifi, Waves, Umbrella } from 'lucide-react';
 import { SectionTitle } from './ui/SectionTitle';
 
 export const Rooms = () => {
@@ -27,6 +27,14 @@ export const Rooms = () => {
       image: "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       amenities: ["Stapelbed", "Speelgoed", "Gedeelde badkamer", "Gratis WiFi"],
       price: "Een knuffel"
+    },
+    {
+      id: 4,
+      name: "Strandchalet",
+      description: "Gezellig chalet direct aan het strand met eigen terras en adembenemend uitzicht over zee.",
+      image: "https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      amenities: ["Strandbed", "Privé terras", "Strandstoel & parasol", "Gratis WiFi"],
+      price: "Een zonnige glimlach"
     }
   ];
 
@@ -34,8 +42,11 @@ export const Rooms = () => {
     "Kingsize bed": <Bed className="h-5 w-5" />,
     "Tweepersoonsbed": <Bed className="h-5 w-5" />,
     "Stapelbed": <Bed className="h-5 w-5" />,
+    "Strandbed": <Bed className="h-5 w-5" />,
     "Koffiezetapparaat": <Coffee className="h-5 w-5" />,
     "Gratis WiFi": <Wifi className="h-5 w-5" />,
+    "Strandstoel & parasol": <Umbrella className="h-5 w-5" />,
+    "Privé terras": <Waves className="h-5 w-5" />,
   };
 
   return (
@@ -46,22 +57,22 @@ export const Rooms = () => {
           subtitle="Kies de kamer die bij je past" 
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {rooms.map((room) => (
             <div key={room.id} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
               <img 
                 src={room.image} 
                 alt={room.name} 
-                className="w-full h-64 object-cover"
+                className="w-full h-48 sm:h-56 md:h-40 lg:h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{room.name}</h3>
-                <p className="text-gray-600 mb-4">{room.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">{room.name}</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">{room.description}</p>
                 <div className="mb-4">
-                  <h4 className="font-semibold text-gray-700 mb-2">Voorzieningen:</h4>
+                  <h4 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">Voorzieningen:</h4>
                   <ul className="space-y-2">
                     {room.amenities.map((amenity, index) => (
-                      <li key={index} className="flex items-center text-gray-600">
+                      <li key={index} className="flex items-center text-gray-600 text-sm sm:text-base">
                         <span className="mr-2 text-rose-500">
                           {amenityIcons[amenity as keyof typeof amenityIcons] || "•"}
                         </span>
@@ -71,10 +82,10 @@ export const Rooms = () => {
                   </ul>
                 </div>
                 <div className="flex justify-between items-center mt-6">
-                  <span className="text-lg font-bold text-rose-600">{room.price}</span>
+                  <span className="text-base sm:text-lg font-bold text-rose-600">{room.price}</span>
                   <button 
                     onClick={() => alert("Deze kamer is altijd beschikbaar voor jou!")}
-                    className="px-4 py-2 bg-rose-500 text-white rounded hover:bg-rose-600 transition-colors"
+                    className="px-3 sm:px-4 py-2 bg-rose-500 text-white rounded hover:bg-rose-600 transition-colors text-sm sm:text-base"
                   >
                     Reserveer
                   </button>
