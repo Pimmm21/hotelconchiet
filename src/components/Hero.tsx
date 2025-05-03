@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home } from 'lucide-react';
+import HuisVoorkant from '../assets/Huis-voorkant.jpg';
 
 export const Hero = () => {
   return (
@@ -7,7 +8,7 @@ export const Hero = () => {
       id="home" 
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" 
+        backgroundImage: `url(${HuisVoorkant})` 
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>

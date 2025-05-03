@@ -1,6 +1,11 @@
 import React from 'react';
 import { Bed, Coffee, Wifi, Waves, Umbrella } from 'lucide-react';
 import { SectionTitle } from './ui/SectionTitle';
+import Ouderkamer from '../assets/OuderKamer.jpg';
+import Logeerkamer from '../assets/Kamer1.jpg';
+import Logeerkamer2 from '../assets/Kamer2.jpg';
+import Logeerkamer3 from '../assets/Kamer3.jpg';
+import Chalet from '../assets/Chalet.jpg';
 
 export const Rooms = () => {
   const rooms = [
@@ -8,32 +13,40 @@ export const Rooms = () => {
       id: 1,
       name: "De Ouderkamer Suite",
       description: "Onze meest luxe kamer met kingsize bed, eigen badkamer en panoramisch uitzicht over de tuin.",
-      image: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      amenities: ["Kingsize bed", "Eigen badkamer", "Koffiezetapparaat", "Gratis WiFi"],
+      image: Ouderkamer,
+      amenities: ["Kingsize bed", "Eigen badkamer", "Balkon", "Gratis WiFi"],
       price: "Liefde & respect"
     },
     {
       id: 2,
       name: "De Logeerkamer",
-      description: "Comfortabele kamer met tweepersoonsbed, gedeelde badkamer en uitzicht op de straat.",
-      image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      amenities: ["Tweepersoonsbed", "Gedeelde badkamer", "Bureau", "Gratis WiFi"],
+      description: "Comfortabele kamer met tweepersoonsbed en uitzicht op de tuin. Eigenlijk altijd permanent gereserveerd door Chris & Pim",
+      image: Logeerkamer,
+      amenities: ["Tweepersoonsbed", "Eigen badkamer", "Airco", "Gratis WiFi"],
       price: "Een fles wijn"
     },
     {
       id: 3,
-      name: "De Kinderkamer",
-      description: "Nostalgische kamer met stapelbed, speelgoed en veel herinneringen.",
-      image: "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      amenities: ["Stapelbed", "Speelgoed", "Gedeelde badkamer", "Gratis WiFi"],
+      name: "De Carnaval Logeerkamer",
+      description: "Gezellig kamer met strijkplank en carnavalsjasjes, perfecte plek om te crashen na een dag carnaval.",
+      image: Logeerkamer2,
+      amenities: ["Tweepersoonsbed", "Carnavalsjasjes", "Airco", "Gratis WiFi"],
       price: "Een knuffel"
     },
     {
       id: 4,
+      name: "De Kinderkamer",
+      description: "Gezellig kamer met uitzicht op de straat, de badkamer en WC zitten om de hoek.",
+      image: Logeerkamer3,
+      amenities: ["Tweepersoonsbed", "Knuffel", "Gedeelde Badkamer & WC", "Gratis WiFi"],
+      price: "Worstenbroodjes"
+    },
+    {
+      id: 5,
       name: "Strandchalet",
-      description: "Gezellig chalet direct aan het strand met eigen terras en adembenemend uitzicht over zee.",
-      image: "https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      amenities: ["Strandbed", "Privé terras", "Strandstoel & parasol", "Gratis WiFi"],
+      description: "Gezellig chalet direct aan het strand met eigen veranda (in de verbouwing) gelegen op een ongeëvenaard vakantie park.",
+      image: Chalet,
+      amenities: ["Strandbed", "Privé terras", "Slaapplekken tot wel 6 personen", "Gratis WiFi"],
       price: "Een zonnige glimlach"
     }
   ];

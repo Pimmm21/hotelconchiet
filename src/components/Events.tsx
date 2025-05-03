@@ -1,6 +1,9 @@
 import React from 'react';
 import { Calendar, Users, Gift } from 'lucide-react';
 import { SectionTitle } from './ui/SectionTitle';
+import verkadeImage from '../assets/verkade-3.jpg';
+import Kerstdiner from '../assets/Kerstdiner.jpg';
+import Diner21 from '../assets/21diner.jpg';
 
 export const Events = () => {
   const events = [
@@ -8,33 +11,33 @@ export const Events = () => {
       id: 1,
       name: "21-Diners",
       description: "Vier je 21e verjaardag in stijl met een feestelijk diner en stralende mama als gastvrouw.",
-      image: "https://images.pexels.com/photos/7245478/pexels-photo-7245478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: Diner21,
       icon: <Users className="h-8 w-8" />,
-      details: "Reserveer 6 maanden van tevoren"
+      details: "Met 16 extra slaapplekken"
     },
     {
       id: 2,
       name: "Kerst",
       description: "Geniet van een warme, familie kerstviering met heerlijk eten en gezelligheid.",
-      image: "https://images.pexels.com/photos/1702116/pexels-photo-1702116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: Kerstdiner,
       icon: <Gift className="h-8 w-8" />,
-      details: "Jaarlijks evenement"
+      details: "Wijnflessen als microfoon"
     },
     {
       id: 3,
       name: "Carnaval",
       description: "Laat je gaan tijdens het vrolijkste feest van het jaar, met verkleedpartijen en gezelligheid.",
-      image: "https://images.pexels.com/photos/11470428/pexels-photo-11470428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: verkadeImage,
       icon: <Calendar className="h-8 w-8" />,
-      details: "Februari/Maart"
+      details: "Iedereen is welkom"
     },
     {
       id: 4,
-      name: "Paasontbijt",
-      description: "Begin de dag met een uitgebreid familie paasontbijt en traditionele eierjacht.",
+      name: "Wijnproverij",
+      description: "Laat je de hele avond verwennen met wijnen een speciaal wijnhuis met bijpassende gerechten",
       image: "https://images.pexels.com/photos/6177639/pexels-photo-6177639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       icon: <Calendar className="h-8 w-8" />,
-      details: "April"
+      details: "Geen wijn te kort"
     }
   ];
 

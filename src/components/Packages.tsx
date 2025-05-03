@@ -1,50 +1,53 @@
 import React from 'react';
 import { SectionTitle } from './ui/SectionTitle';
 import { Gift, Calendar, Star } from 'lucide-react';
+import Carnavalpakket from '../assets/Carnavalspakket.jpg';
+import Privatedining from '../assets/Privatedining.jpg';
+import Maatadvies from '../assets/Maatadvies.jpg';
 
 export const Packages = () => {
   const packages = [
     {
       id: 1,
       name: "Carnavalspakket",
-      description: "Alles wat je nodig hebt voor een onvergetelijke carnaval, inclusief verkleedkleren, schmink en een stevige bodem voor het feesten.",
-      image: "https://images.pexels.com/photos/3045825/pexels-photo-3045825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      description: "Alles wat je nodig hebt voor een onvergetelijke carnaval, inclusief oeteldonksjaal, embleem en een stevige bodem voor het feesten.",
+      image: Carnavalpakket,
       icon: <Calendar className="h-6 w-6" />,
       includes: [
-        "Verkleedkleren",
-        "Professionele schmink",
+        "Oeteldonk kleuren",
+        "Professionele embleem naaien",
         "Stevig ontbijt",
         "Aspirinetjes voor de volgende dag"
       ],
-      price: "Een dansje"
+      price: "Een biertje in de stad"
     },
     {
       id: 2,
-      name: "Kerstpakket",
-      description: "Geniet van een magische kerst met alles voor een feestelijke tijd, inclusief decoraties, hapjes en warme chocolademelk.",
-      image: "https://images.pexels.com/photos/1702116/pexels-photo-1702116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Private dining",
+      description: "Geniet van een volledig verzorgd diner, inclusief opmaak voor de gerechten, heerlijke wijnen en nooit met honger naar huis.",
+      image: Privatedining,
       icon: <Gift className="h-6 w-6" />,
       includes: [
-        "Traditioneel kerstdiner",
-        "Kerstcadeaus onder de boom",
-        "Warme chocolademelk met slagroom",
-        "Kerstmuziek en gezelligheid"
+        "Professioneel opgemaakte gerechten",
+        "Minimaal 12 gerechten op een avond",
+        "Nooit met een leeg wijnglas",
+        "Vervoer naar huis op eigen gelegenheid"
       ],
-      price: "Een kerstliedje"
+      price: "Een compliment"
     },
     {
       id: 3,
-      name: "Verjaardagspakket",
-      description: "Vier je speciale dag met een persoonlijk verjaardagsfeest, taart en cadeaus op maat gemaakt.",
-      image: "https://images.pexels.com/photos/2072181/pexels-photo-2072181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      name: "Advies op maat",
+      description: "Je hoeft nooit meer onzeker door het leven te gaan met dit pakket, je krijgt altijd het beste advies specifiek voor jouw situatie",
+      image: Maatadvies,
       icon: <Star className="h-6 w-6" />,
       includes: [
-        "Verjaardagstaart naar keuze",
-        "Persoonlijke cadeaus",
-        "Familiefeest",
-        "Fotoshoot voor herinneringen"
+        "Advies onder genot van een drankje",
+        "Elke uur van de dag beschikbaar",
+        "Tranen zijn altijd toegestaan",
+        "Er wordt nooit geoordeeld"
       ],
-      price: "Een glimlach"
+      price: "Een onvergetenlijke herinnering"
     }
   ];
 
