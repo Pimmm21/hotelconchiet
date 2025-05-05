@@ -7,29 +7,28 @@ export const Location = () => {
     {
       id: 1,
       name: "Auto",
-      description: "Ruime parkeergelegenheid beschikbaar. Navigeer naar 'Huize Conchiet'.",
+      description: "Navigeer naar 'Huize Conchiet', parkeergelegenheden beschikbaar",
       icon: <Car className="h-6 w-6" />
     },
     {
       id: 2,
       name: "Openbaar Vervoer",
-      description: "10 minuten lopen vanaf het dichtstbijzijnde station.",
+      description: "10 minuten lopen vanaf het dichtstbijzijnde station. Shuttle service beschikbaar op aanvraag",
       icon: <Train className="h-6 w-6" />
     },
     {
       id: 3,
       name: "Vliegveld",
-      description: "45 minuten rijden vanaf het vliegveld. Shuttle service beschikbaar op aanvraag.",
+      description: "Stap vanuit het vliegveld op het OV, voor goede vrienden en familie is een Shuttle service beschikbaar.",
       icon: <Plane className="h-6 w-6" />
     }
   ];
 
   const attractions = [
-    "Gezellige binnenstad (5 min)",
-    "Lokale markt (10 min)",
-    "Park en wandelroutes (15 min)",
-    "Museum (20 min)",
-    "Winkelcentrum (15 min)"
+    "Gezellige binnenstad (15 min)",
+    "Honden wandelroutes (5 min)",
+    "Stadium de Vliert (10 min)",
+    "Sportcentrum 'Sportiom'(10 min)"
   ];
 
   return (
@@ -41,20 +40,7 @@ export const Location = () => {
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-          <div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
-              {/* Map placeholder - would be replaced with actual Google Maps embed */}
-              <div className="relative h-96 bg-gray-200">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-16 w-16 text-rose-500 mx-auto mb-3" />
-                    <p className="text-gray-600 text-lg">Hotel Conchiet</p>
-                    <p className="text-gray-500">Placeholder voor kaart</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           
           <div className="flex flex-col justify-between">
             <div>

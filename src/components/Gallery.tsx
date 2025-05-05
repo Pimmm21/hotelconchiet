@@ -1,64 +1,85 @@
 import React, { useState } from 'react';
 import { SectionTitle } from './ui/SectionTitle';
-import { ThumbsUp, ThumbsDown, X, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Camera, Heart, PartyPopper, X, ArrowLeft, ArrowRight } from 'lucide-react';
+import Verkade1 from '../assets/gallery/Verkade stuk.jpg';
+import Verkade2 from '../assets/gallery/Stukje 2 - Verkade.jpg';
+import Omebernard1 from '../assets/gallery/Ome Bernard 1.png';
+import Omebernard2 from '../assets/gallery/Ome Bernard 2.png';
+import Kerst from '../assets/gallery/kerstdiner.jpg';
+import Spanje from '../assets/gallery/Familie Spanje.jpg';
+import Monique from '../assets/gallery/Monique van Rooij.jpg';
+import Verrassing from '../assets/gallery/Foto mama 60 diner.jpeg';
 
 export const Gallery = () => {
-  const [activeTab, setActiveTab] = useState('fame');
+  const [activeTab, setActiveTab] = useState('inzendingen');
   const [showLightbox, setShowLightbox] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Placeholder images - these would be replaced with actual family photos
   const images = {
-    fame: [
+    inzendingen: [
       {
-        url: "https://images.pexels.com/photos/1449667/pexels-photo-1449667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Gezellige familiebijeenkomst tijdens Kerst"
+        url: Verkade1,
+        caption: "Inzending van de geliefde Verkade familie"
       },
       {
-        url: "https://images.pexels.com/photos/8355343/pexels-photo-8355343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Verjaardagsfeest met trotse mama"
+        url: Verkade2,
+        caption: "Inzending van de geliefde Verkade familie"
       },
       {
-        url: "https://images.pexels.com/photos/3893658/pexels-photo-3893658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Moederdag viering"
+        url: Omebernard1,
+        caption: "Collage van de Ome Bernard groep"
       },
       {
-        url: "https://images.pexels.com/photos/7318014/pexels-photo-7318014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Familiewandeling in het park"
+        url: Omebernard2,
+        caption: "Een leuke wordzoeker van de Ome Bernard groep"
       },
       {
-        url: "https://images.pexels.com/photos/3811021/pexels-photo-3811021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Vakantieherinneringen"
+        url: Kerst,
+        caption: "Een van de vele kerstdiners gehost bij Hotel Conchiet"
       },
       {
-        url: "https://images.pexels.com/photos/4148842/pexels-photo-4148842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Lekker samen koken in de keuken"
+        url: Spanje,
+        caption: "Waar de gastvrijheid geboren is, in Spanje"
+      },
+      {
+        url: Monique,
+        caption: "Collage ingezonden door Monique van Rooij"
       }
     ],
-    shame: [
+    gezelligheid: [
       {
-        url: "https://images.pexels.com/photos/6877479/pexels-photo-6877479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Die keer dat we allemaal in het zwembad vielen"
+        url: Verrassing,
+        caption: "Verrassings diner voor de Gastvrouw Conchita georganiseerd door Richards"
       },
       {
-        url: "https://images.pexels.com/photos/8728348/pexels-photo-8728348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Mislukte taart experiment"
+        url: "https://images.pexels.com/photos/4148842/pexels-photo-4148842.jpeg",
+        caption: "Samen koken in mama's keuken"
       },
       {
-        url: "https://images.pexels.com/photos/6890399/pexels-photo-6890399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Carnavalsoutfit 2019"
+        url: "https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg",
+        caption: "Spelletjesavond bij Hotel Conchiet"
       },
       {
-        url: "https://images.pexels.com/photos/8828202/pexels-photo-8828202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Kerst 2015 - de brandende kalkoen"
+        url: "https://images.pexels.com/photos/5778899/pexels-photo-5778899.jpeg",
+        caption: "Gezellig samen aan de koffie"
+      }
+    ],
+    feesten: [
+      {
+        url: "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg",
+        caption: "Verjaardagsfeest van mama"
       },
       {
-        url: "https://images.pexels.com/photos/7202810/pexels-photo-7202810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Die keer dat we allemaal in slaap vielen op de bank"
+        url: "https://images.pexels.com/photos/7180795/pexels-photo-7180795.jpeg",
+        caption: "Kerstviering met de hele familie"
       },
       {
-        url: "https://images.pexels.com/photos/6147029/pexels-photo-6147029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        caption: "Typische maandagochtend chaos"
+        url: "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg",
+        caption: "Paasbrunch bij Hotel Conchiet"
+      },
+      {
+        url: "https://images.pexels.com/photos/7180788/pexels-photo-7180788.jpeg",
+        caption: "Nieuwjaarsborrel met oliebollen"
       }
     ]
   };
@@ -73,12 +94,12 @@ export const Gallery = () => {
   };
 
   const nextImage = () => {
-    const currentImages = activeTab === 'fame' ? images.fame : images.shame;
+    const currentImages = images[activeTab as keyof typeof images];
     setCurrentImageIndex((prev) => (prev === currentImages.length - 1 ? 0 : prev + 1));
   };
 
   const prevImage = () => {
-    const currentImages = activeTab === 'fame' ? images.fame : images.shame;
+    const currentImages = images[activeTab as keyof typeof images];
     setCurrentImageIndex((prev) => (prev === 0 ? currentImages.length - 1 : prev - 1));
   };
 
@@ -86,8 +107,8 @@ export const Gallery = () => {
     <section id="gallery" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title="Hall of Fame/Shame" 
-          subtitle="Herinneringen om te koesteren (of liever te vergeten)" 
+          title="Fotogalerij" 
+          subtitle="Herinneringen in beeld" 
         />
         
         <div className="max-w-6xl mx-auto mt-12">
@@ -95,71 +116,57 @@ export const Gallery = () => {
             <div className="inline-flex bg-gray-200 rounded-lg p-1">
               <button
                 className={`px-6 py-2 rounded-lg flex items-center ${
-                  activeTab === 'fame' 
+                  activeTab === 'inzendingen' 
                     ? 'bg-rose-500 text-white' 
                     : 'text-gray-700 hover:text-rose-500'
                 }`}
-                onClick={() => setActiveTab('fame')}
+                onClick={() => setActiveTab('inzendingen')}
               >
-                <ThumbsUp className="h-5 w-5 mr-2" />
-                <span>Hall of Fame</span>
+                <Camera className="h-5 w-5 mr-2" />
+                <span>Inzendingen</span>
               </button>
               <button
                 className={`px-6 py-2 rounded-lg flex items-center ${
-                  activeTab === 'shame' 
+                  activeTab === 'gezelligheid' 
                     ? 'bg-rose-500 text-white' 
                     : 'text-gray-700 hover:text-rose-500'
                 }`}
-                onClick={() => setActiveTab('shame')}
+                onClick={() => setActiveTab('gezelligheid')}
               >
-                <ThumbsDown className="h-5 w-5 mr-2" />
-                <span>Hall of Shame</span>
+                <Heart className="h-5 w-5 mr-2" />
+                <span>Gezelligheid</span>
+              </button>
+              <button
+                className={`px-6 py-2 rounded-lg flex items-center ${
+                  activeTab === 'feesten' 
+                    ? 'bg-rose-500 text-white' 
+                    : 'text-gray-700 hover:text-rose-500'
+                }`}
+                onClick={() => setActiveTab('feesten')}
+              >
+                <PartyPopper className="h-5 w-5 mr-2" />
+                <span>Feesten</span>
               </button>
             </div>
           </div>
           
-          <div>
-            <div className={activeTab === 'fame' ? 'block' : 'hidden'}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {images.fame.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className="cursor-pointer overflow-hidden rounded-lg shadow-md transform transition-transform hover:scale-105"
-                    onClick={() => openLightbox(index)}
-                  >
-                    <img 
-                      src={image.url} 
-                      alt={image.caption} 
-                      className="w-full h-64 object-cover"
-                    />
-                    <div className="p-3 bg-white">
-                      <p className="text-sm text-gray-600">{image.caption}</p>
-                    </div>
-                  </div>
-                ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+            {images[activeTab as keyof typeof images].map((image, index) => (
+              <div 
+                key={index} 
+                className="cursor-pointer overflow-hidden rounded-lg shadow-md transform transition-transform hover:scale-105"
+                onClick={() => openLightbox(index)}
+              >
+                <img 
+                  src={image.url} 
+                  alt={image.caption} 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-3 bg-white">
+                  <p className="text-sm text-gray-600">{image.caption}</p>
+                </div>
               </div>
-            </div>
-            
-            <div className={activeTab === 'shame' ? 'block' : 'hidden'}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {images.shame.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className="cursor-pointer overflow-hidden rounded-lg shadow-md transform transition-transform hover:scale-105"
-                    onClick={() => openLightbox(index)}
-                  >
-                    <img 
-                      src={image.url} 
-                      alt={image.caption} 
-                      className="w-full h-64 object-cover"
-                    />
-                    <div className="p-3 bg-white">
-                      <p className="text-sm text-gray-600">{image.caption}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -190,12 +197,12 @@ export const Gallery = () => {
           
           <div className="max-w-4xl max-h-90vh">
             <img 
-              src={activeTab === 'fame' ? images.fame[currentImageIndex].url : images.shame[currentImageIndex].url} 
+              src={images[activeTab as keyof typeof images][currentImageIndex].url} 
               alt="Gallery" 
               className="max-h-[80vh] max-w-full"
             />
             <p className="text-white text-center mt-4">
-              {activeTab === 'fame' ? images.fame[currentImageIndex].caption : images.shame[currentImageIndex].caption}
+              {images[activeTab as keyof typeof images][currentImageIndex].caption}
             </p>
           </div>
         </div>
