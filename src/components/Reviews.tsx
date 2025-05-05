@@ -9,6 +9,8 @@ import Basekfoto from '../assets/reviews/Basekreview.jpg';
 import Everdienfoto from '../assets/reviews/Everdienreview.jpg';
 import Theokarinfoto from '../assets/reviews/Theokarinreview.jpg';
 import Famfoto from '../assets/reviews/Famreview.jpeg';
+import Sanderfoto from '../assets/reviews/Sanderreview.jpg';
+import Petrafoto from '../assets/reviews/Petrareview.jpg';
 
 export const Reviews = () => {
   const reviews = [
@@ -134,6 +136,33 @@ export const Reviews = () => {
       ],
       rating: 5,
       image: Famfoto
+    },
+    {
+      id: 9,
+      name: "Sander",
+      relation: "Verkade Zoon",
+      comment: "Met 'hotel' doen we het tekort… Het is een oase van warmhartigheid, gastvrijheid en zorgzaamheid - zonder vast adres.",
+      fullReview: [
+        "Met 'hotel' doen we het tekort… Het is een oase van warmhartigheid, gastvrijheid en zorgzaamheid - zonder vast adres.",
+        "Van jongs af aan heeft het mij veel gegeven. Hopelijk heb ik genoeg kunnen teruggeven om mijn waardering te onderstrepen - ook ter compensatie van alle jeugdige ellende. Goed, we kunnen wel concluderen dat het staat als een huis. Het scala aan arrangementen dat Conchiet te bieden heeft, is indrukwekkend. Voor elk seizoen heeft Conchiet wel een troef. Zelfs met kerst schuwt ze het niet om met haar special guests te toasten. Dank voor het verrijken van de levens van al je gasten. Op nog vele jaren!"
+      ],
+      rating: 5,
+      image: Sanderfoto
+    },
+    {
+      id: 10,
+      name: "Petra",
+      relation: "Vriendin",
+      comment: "Conchita is een 'mooi mens', in alle betekenissen van het woord.  Twee van haar eigenschappen waar ik zeker jaloers op ben: tomeloze energie en veerkracht.",
+      fullReview: [
+        "Conchita is een ‘mooi mens’, in alle betekenissen van het woord.  Twee van haar eigenschappen waar ik zeker jaloers op ben: tomeloze energie en veerkracht",
+        "We spreken een paar keer per jaar af, samen met Marijke. Dat zijn altijd gezellige avonden, die voelen alsof we elkaar kort daarvoor nog hebben gezien/gesproken.",
+        "Hoe makkelijk ze na een werkdag ‘even’ een origineel en superlekker etentje in elkaar draait, weet waarschijnlijk iedereen.",
+        "Sinds het begin dat we elkaar kennen (en dat meer dan dertig jaar geleden) inspireert ze mij vaak. Eén van de eerste recepten die ik van Conchita kreeg is de Massaman curry van Lai Thai.",
+        "En die heb ik nog steeds!"
+      ],
+      rating: 5,
+      image: Petrafoto
     }
   ];
 

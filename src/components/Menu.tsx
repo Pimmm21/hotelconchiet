@@ -8,60 +8,54 @@ export const Menu = () => {
   const menuItems = {
     eten: [
       {
-        name: "Mama's Beroemde Gehaktballen",
-        description: "Sappige gehaktballen volgens geheim familierecept, geserveerd met jus en aardappelpuree.",
-        price: "Een glimlach",
+        name: "Oma’s spaghetti",
+        description: "Overheerlijke bolognese saus volgens geheim familierecept. Één ding kunnen we al wel verklappen; het is zeker niet mager en waag het is om een ander merk kruiden te kopen 😉.",
+        price: "Gratis",
         special: true
       },
       {
-        name: "Boerenkool met Worst",
-        description: "Traditionele stamppot met rookworst zoals alleen mama die kan maken.",
-        price: "Een knuffel",
+        name: "Borrelplank 'om mee te starten'",
+        description: "Heerlijke borrelplank, zoals genoemd 'om mee te starten'. Wat de meeste echter niet weten is dat het zo'n volle en lekkere borrelplank is, dat je eigenlijk niet meer hoeft te eten",
+        price: "Volle maag",
         special: false
       },
       {
-        name: "Appeltaart",
-        description: "Huisgemaakte appeltaart met een vleugje kaneel en een krokante bodem.",
-        price: "Een compliment",
+        name: "Vrijdag film avond diner",
+        description: "Een combinatie van Spaanse lekkerheden; inktvis in rode saus, tortilla en nog veel meer! Filmpje uitkiezen en de avond is compleet.",
+        price: "Een film kiezen",
         special: true
       },
       {
-        name: "Pannenkoeken",
-        description: "Luchtige pannenkoeken met stroop, poedersuiker of chocoladepasta.",
+        name: "Pasta arrabbiata",
+        description: "Heerlijke spaghetti in een licht pittige zelfgemaakte tomatensaus van roma tomaatjes en chili, lekker met Parmezaanse kaas. Vraag haar naar de geheime arrabbiata kruiden, waarschijnlijk krijg je deze er zo bij.",
         price: "Een dankjewel",
         special: false
       },
       {
-        name: "Zondagse Soep",
-        description: "Verschillende soepen gemaakt van verse ingrediënten, ideaal voor een koude dag.",
-        price: "Een verhaal",
-        special: false
+        name: "Koolhydraat arme opties",
+        description: "Bij Hotel Conchiet is niks te veel, behalve te veel koolhydraten. Er zijn overal koolhydraat arme opties voor te verzinnen, vraag vooral naar de mogelijkheden.",
+        price: "Compliment",
+        special: true
       }
     ],
     drinken: [
       {
-        name: "Koffie",
-        description: "Vers gezette koffie, altijd beschikbaar en perfect sterk.",
-        price: "Een goed gesprek",
+        name: "Licor 43",
+        description: "Veelzijdig drankje dat bij iedereen het Spaanse temperament los maakt",
+        price: "Karaoke gegarandeerd",
         special: true
       },
       {
-        name: "Thee",
-        description: "Diverse soorten thee, geserveerd in mooie kopjes met iets lekkers erbij.",
-        price: "Tijd nemen",
-        special: false
-      },
-      {
         name: "Wijn",
-        description: "Rode of witte wijn, perfect voor bij het diner of gewoon omdat het kan.",
+        description: "Rode of witte wijn, perfect voor bij het diner of gewoon omdat het kan. Altijd in koolydraad arme variant te krijgen",
         price: "Een toast",
-        special: false
+        special: true
       },
       {
         name: "Bier",
         description: "Koud pilsje of speciaalbier, altijd voorradig in de koelkast.",
-        price: "Een bedankje",
-        special: true
+        price: "To-go mogelijk",
+        special: false
       },
       {
         name: "Slaapmutsje",

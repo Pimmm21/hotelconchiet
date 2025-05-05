@@ -20,7 +20,7 @@ export const Faq = () => {
     },
     {
       question: "Zijn huisdieren toegestaan?",
-      answer: "Natuurlijk! Huisdieren maken deel uit van de familie en zijn daarom meer dan welkom in Hotel Conchiet."
+      answer: "Natuurlijk! Huisdieren maken deel uit van de familie en zijn daarom meer dan welkom in Hotel Conchiet. Er is zelfs een Franse bulldog 24/7 aanwezig."
     },
     {
       question: "Is het ontbijt inbegrepen?",
@@ -83,15 +83,39 @@ export const Faq = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-rose-500 mr-2">•</span>
-                <p className="text-gray-700">De langste verblijfsduur van een gast was 9 maanden (toen hij/zij nog niet geboren was).</p>
-              </li>
-              <li className="flex items-start">
-                <span className="text-rose-500 mr-2">•</span>
-                <p className="text-gray-700">Het recept voor Mama's beroemde appeltaart blijft een goed bewaard geheim.</p>
+                <p className="text-gray-700">De langste verblijfsduur van een gast was 18 jaar.</p>
               </li>
               <li className="flex items-start">
                 <span className="text-rose-500 mr-2">•</span>
                 <p className="text-gray-700">Hotel Conchiet's motto "Altijd open, altijd welkom" is al 60 jaar onveranderd.</p>
+              </li>
+            </ul>
+            <br></br>
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Wist je dat..</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">… de wijn bij Hotel Conchiet altijd op mysterieuze wijze blijft bijgevuld? Zo weet je nooit hoeveel glazen je daadwerkelijk hebt gedronken</p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">… Conchita eigenlijk chef-kok, lifecoach, sommelier, eventplanner én huispsycholoog in één is?</p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">… één van Conchita haar favoriete uitspraken is; "Lekker hè! Gewoon van de Lidl!"</p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">…. Conchita nooit een feestje voorbij laat gaan zonder 'year of summer' aan te vragen. Vaak in de vorm: "Paul, doe ff Year of Summer"</p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">… ze recepten nooit uitschrijft, maar alles “op gevoel” doet - en het dan toch altijd perfect is?</p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-rose-500 mr-2">•</span>
+                <p className="text-gray-700">… ze zo ambassadeur kan worden voor de koolhydraatarme wijn? Inmiddels heeft ze al een paar dozen verkocht aan vrienden en familie.</p>
               </li>
             </ul>
           </div>

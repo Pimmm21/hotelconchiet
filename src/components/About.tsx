@@ -25,19 +25,19 @@ export const About = () => {
             <h3 className="text-3xl font-serif font-bold mb-6">Ons verhaal</h3>
             <div className="space-y-4 text-gray-100">
               <p>
-                Hotel Conchiet werd opgericht in 1965, toen onze geliefde gastvrouw, Mama, werd geboren. Sinds die dag heeft ze haar deuren opengesteld voor familie, vrienden en iedereen die een warm thuis nodig heeft.
+              Conchita Velloso - voor ons gewoon mama - werd geboren op 28 april 1965 en groeide op in een warm en liefdevol gezin met haar Spaanse vader Candido, haar moeder Jessy en haar zusje Marisol. Thuis draaide veel om één ding: eten. Want ja, met een Spaanse familie én een moeder die kon koken als de beste, is het geen verrassing dat de keukengeheimen al vroeg werden doorgegeven.
               </p>
               <p>
-                Deze gastvrijheid is al generaties onderdeel van de familie. Hoewel Conchiet een unieke gastvrouw is, is ze niet de enige in haar familie die gastvrijheid belangrijk vindt en goed voor hun familie en vrienden zorgt.
+              De liefde voor koken kreeg Conchita dus met de paplepel ingegoten - en daar heeft ze in de loop der jaren haar eigen heerlijke 'sausje' aan toegevoegd. Niet alleen qua recepten, maar vooral qua sfeer. Want als je Conchiet een beetje kent, weet je dat het nooit alleen om het eten gaat. Het gaat om gezelligheid, warmte, samen lachen, goede gesprekken, en soms ook gewoon lekker niets hoeven behalve genieten.
               </p>
               <p>
-                In de afgelopen 60 jaar is Hotel Conchiet uitgegroeid tot meer dan alleen een huis. Het is een toevluchtsoord geworden waar je altijd welkom bent, waar de koffie altijd klaarstaat en waar liefde en zorg de belangrijkste voorzieningen zijn.
+              Met haar energieke, liefdevolle en open karakter wist ze van elk moment iets bijzonders te maken. Of je nou alleen even kwam aanwaaien, per ongeluk bleef hangen tot diep in de nacht, of met tassen vol logeerspullen voor de deur stond - je was altijd welkom.
               </p>
               <p>
-                Of je nu komt voor een gezellig diner, een slaapplaats, of gewoon een goed gesprek - bij Hotel Conchiet word je altijd met open armen ontvangen. Het is niet voor niets dat onze gasten keer op keer terugkomen. 
+              En zo ontstond het idee van Hotel Conchiet. Niet omdat er een balie of kamersleutels zijn (al zou ze daar ook nog iets leuks van maken), maar omdat het bij haar gewoon altijd voelt alsof je incheckt op een plek waar alles klopt: goed eten, een fijn bed, een lekker glas wijn (of twee), en vooral: liefde. Deze website is ons eerbetoon aan die bijzondere sfeer, aan mama, en aan alles wat zij voor ons - en voor zovelen om haar heen - betekent.
               </p>
               <p className="font-serif text-xl italic">
-                "Bij Hotel Conchiet ben je nooit een gast, maar altijd familie."
+              "Bij Hotel Conchiet ben je nooit een gast, maar altijd familie."
               </p>
             </div>
             
