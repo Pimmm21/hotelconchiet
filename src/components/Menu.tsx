@@ -42,7 +42,7 @@ export const Menu = () => {
       {
         name: "Licor 43",
         description: "Veelzijdig drankje dat bij iedereen het Spaanse temperament los maakt",
-        price: "Karaoke gegarandeerd",
+        price: "Nooit te vroeg",
         special: true
       },
       {

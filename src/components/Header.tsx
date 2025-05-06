@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Hotel } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import Logo from '../assets/LogoWebsite.png';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +26,7 @@ export const Header = () => {
     { id: 'about', name: 'Over Ons' },
     { id: 'faq', name: 'FAQ' },
     { id: 'menu', name: 'Menukaart' },
-    { id: 'gallery', name: 'Hall of Fame' },
+    { id: 'gallery', name: 'Gallerij' },
     { id: 'workshops', name: 'Workshops' },
     { id: 'letters', name: 'Lieve Woorden' }
   ];
@@ -46,7 +47,14 @@ export const Header = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Hotel className="h-8 w-8 text-rose-500 mr-2" />
+          <img 
+            src={Logo} 
+            alt="Hotel Conchiet Logo" 
+            className="h-16 w-auto mr-3"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
           <span className={`font-serif text-2xl font-bold ${isScrolled ? 'text-rose-600' : 'text-white'}`}>
             Hotel Conchiet
           </span>
@@ -80,20 +88,7 @@ export const Header = () => {
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M4 6h16M4 12h16M4 18h16" 
-            />
-          </svg>
+          <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
         </button>
       </div>
 

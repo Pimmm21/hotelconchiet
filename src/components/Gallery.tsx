@@ -9,6 +9,11 @@ import Kerst from '../assets/gallery/kerstdiner.jpg';
 import Spanje from '../assets/gallery/Familie Spanje.jpg';
 import Monique from '../assets/gallery/Monique van Rooij.jpg';
 import Verrassing from '../assets/gallery/Foto mama 60 diner.jpeg';
+import Marika from '../assets/gallery/mama marika.jpg';
+import Everdien1 from '../assets/gallery/Everdien - Conchita groep vrijgezellenfeest.jpg';
+import Verkade3 from '../assets/gallery/verkade 3.jpg';
+import Champagne1 from '../assets/gallery/Mama beste cheerleader.jpg';
+import Dianne from '../assets/gallery/Foto Dianne, Ries, mama.jpeg';
 
 export const Gallery = () => {
   const [activeTab, setActiveTab] = useState('inzendingen');
@@ -34,14 +39,6 @@ export const Gallery = () => {
         caption: "Een leuke wordzoeker van de Ome Bernard groep"
       },
       {
-        url: Kerst,
-        caption: "Een van de vele kerstdiners gehost bij Hotel Conchiet"
-      },
-      {
-        url: Spanje,
-        caption: "Waar de gastvrijheid geboren is, in Spanje"
-      },
-      {
         url: Monique,
         caption: "Collage ingezonden door Monique van Rooij"
       }
@@ -52,34 +49,34 @@ export const Gallery = () => {
         caption: "Verrassings diner voor de Gastvrouw Conchita georganiseerd door Richards"
       },
       {
-        url: "https://images.pexels.com/photos/4148842/pexels-photo-4148842.jpeg",
-        caption: "Samen koken in mama's keuken"
+        url: Kerst,
+        caption: "Een van de vele kerstdiners gehost bij Hotel Conchiet"
       },
       {
-        url: "https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg",
-        caption: "Spelletjesavond bij Hotel Conchiet"
+        url: Spanje,
+        caption: "Waar de gastvrijheid geboren is, in Spanje"
       },
       {
-        url: "https://images.pexels.com/photos/5778899/pexels-photo-5778899.jpeg",
-        caption: "Gezellig samen aan de koffie"
+        url: Marika,
+        caption: "Ons Conchiet samen met Marika"
       }
     ],
     feesten: [
       {
-        url: "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg",
-        caption: "Verjaardagsfeest van mama"
+        url: Everdien1,
+        caption: "Vrijgezellenfeest van ons Conchiet"
       },
       {
-        url: "https://images.pexels.com/photos/7180795/pexels-photo-7180795.jpeg",
-        caption: "Kerstviering met de hele familie"
+        url: Verkade3,
+        caption: "Zondag traditie met de Verkade familie"
       },
       {
-        url: "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg",
-        caption: "Paasbrunch bij Hotel Conchiet"
+        url: Champagne1,
+        caption: "Ons Conchiet is haar natural habitat"
       },
       {
-        url: "https://images.pexels.com/photos/7180788/pexels-photo-7180788.jpeg",
-        caption: "Nieuwjaarsborrel met oliebollen"
+        url: Dianne,
+        caption: "Samen met Dianne en Richard"
       }
     ]
   };

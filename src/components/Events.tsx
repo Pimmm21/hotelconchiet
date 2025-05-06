@@ -4,6 +4,7 @@ import { SectionTitle } from './ui/SectionTitle';
 import verkadeImage from '../assets/verkade-3.jpg';
 import Kerstdiner from '../assets/Kerstdiner.jpg';
 import Diner21 from '../assets/21diner.jpg';
+import Wijn from '../assets/Wijnproeverij.jpg';
 
 export const Events = () => {
   const events = [
@@ -33,9 +34,9 @@ export const Events = () => {
     },
     {
       id: 4,
-      name: "Wijnproverij",
+      name: "Wijnproeverij",
       description: "Laat je de hele avond verwennen met wijnen een speciaal wijnhuis met bijpassende gerechten",
-      image: "https://images.pexels.com/photos/6177639/pexels-photo-6177639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: Wijn,
       icon: <Calendar className="h-8 w-8" />,
       details: "Geen wijn te kort"
     }
