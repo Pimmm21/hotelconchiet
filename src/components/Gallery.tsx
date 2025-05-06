@@ -110,31 +110,31 @@ export const Gallery = () => {
         
         <div className="max-w-6xl mx-auto mt-12">
           <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-gray-200 rounded-lg p-1">
+            <div className="flex flex-col sm:flex-row bg-gray-200 rounded-lg p-1 w-full sm:w-auto">
               <button
-                className={`px-6 py-2 rounded-lg flex items-center ${
+                className={`px-4 sm:px-6 py-2 rounded-lg flex items-center justify-center ${
                   activeTab === 'inzendingen' 
                     ? 'bg-rose-500 text-white' 
                     : 'text-gray-700 hover:text-rose-500'
-                }`}
+                } ${activeTab !== 'inzendingen' ? 'mb-1 sm:mb-0 sm:mr-1' : ''}`}
                 onClick={() => setActiveTab('inzendingen')}
               >
                 <Camera className="h-5 w-5 mr-2" />
                 <span>Inzendingen</span>
               </button>
               <button
-                className={`px-6 py-2 rounded-lg flex items-center ${
+                className={`px-4 sm:px-6 py-2 rounded-lg flex items-center justify-center ${
                   activeTab === 'gezelligheid' 
                     ? 'bg-rose-500 text-white' 
                     : 'text-gray-700 hover:text-rose-500'
-                }`}
+                } ${activeTab !== 'gezelligheid' ? 'mb-1 sm:mb-0 sm:mr-1' : ''}`}
                 onClick={() => setActiveTab('gezelligheid')}
               >
                 <Heart className="h-5 w-5 mr-2" />
                 <span>Gezelligheid</span>
               </button>
               <button
-                className={`px-6 py-2 rounded-lg flex items-center ${
+                className={`px-4 sm:px-6 py-2 rounded-lg flex items-center justify-center ${
                   activeTab === 'feesten' 
                     ? 'bg-rose-500 text-white' 
                     : 'text-gray-700 hover:text-rose-500'
