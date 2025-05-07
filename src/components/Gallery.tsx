@@ -14,6 +14,9 @@ import Everdien1 from '../assets/gallery/Everdien - Conchita groep vrijgezellenf
 import Verkade3 from '../assets/gallery/verkade 3.jpg';
 import Champagne1 from '../assets/gallery/Mama beste cheerleader.jpg';
 import Dianne from '../assets/gallery/Foto Dianne, Ries, mama.jpeg';
+import Funpop from '../assets/gallery/Funpop.jpg';
+import Dini1989 from '../assets/gallery/Foto1989Dinibodar.png';
+import PetulaMarisol from '../assets/gallery/PetulaConchitaMarisol.png';
 
 export const Gallery = () => {
   const [activeTab, setActiveTab] = useState('inzendingen');
@@ -41,12 +44,16 @@ export const Gallery = () => {
       {
         url: Monique,
         caption: "Collage ingezonden door Monique van Rooij"
+      },
+      {
+        url: Dini1989,
+        caption: "Demofoto visagie: Dini Bodar van ons Conchiet uit 1989"
       }
     ],
     gezelligheid: [
       {
         url: Verrassing,
-        caption: "Verrassings diner voor de Gastvrouw Conchita georganiseerd door Richards"
+        caption: "Verrassings diner voor de Gastvrouw Conchita georganiseerd door Richard"
       },
       {
         url: Kerst,
@@ -59,6 +66,10 @@ export const Gallery = () => {
       {
         url: Marika,
         caption: "Ons Conchiet samen met Marika"
+      },
+      {
+        url: PetulaMarisol,
+        caption: "Foto uit 1977 met Petula, Conchita en Marisol"
       }
     ],
     feesten: [
@@ -72,11 +83,15 @@ export const Gallery = () => {
       },
       {
         url: Champagne1,
-        caption: "Ons Conchiet is haar natural habitat"
+        caption: "Ons Conchiet in haar natural habitat"
       },
       {
         url: Dianne,
         caption: "Samen met Dianne en Richard"
+      },
+      {
+        url: Funpop,
+        caption: "Samen ieder jaar naar Funpop, wat Elke zo leuk vind ❤️ Maar waar wij stiekem meer van de artiesten genieten dan Elke! En dit jaar was nog specialer toen er een 'echte' trouwerij plaats vond"
       }
     ]
   };

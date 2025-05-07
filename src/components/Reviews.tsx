@@ -11,6 +11,8 @@ import Theokarinfoto from '../assets/reviews/Theokarinreview.jpg';
 import Famfoto from '../assets/reviews/Famreview.jpeg';
 import Sanderfoto from '../assets/reviews/Sanderreview.jpg';
 import Petrafoto from '../assets/reviews/Petrareview.jpg';
+import Chrisfoto from '../assets/reviews/Chrisreview.jpg';
+import Louisfoto from '../assets/reviews/Louisreview.png';
 
 export const Reviews = () => {
   const reviews = [
@@ -163,6 +165,33 @@ export const Reviews = () => {
       ],
       rating: 5,
       image: Petrafoto
+    },
+    {
+      id: 11,
+      name: "Chris",
+      relation: "Bonus Dochter",
+      comment: " Een onvergetelijk verblijf in Hotel Conchiet - al 9 jaar lang!",
+      fullReview: [
+        "Negen jaar geleden stapte ik voor het eerst binnen bij Hotel Conchiet - een charmant familiehotel met een warm ontvangst zoals je die zelden meemaakt. Geen incheckbalie, geen sleutelkaart, maar wel open armen, een hart van goud en een gevoel van thuiskomen dat je nergens anders vindt. Vanaf dag één heeft de eigenaresse, een absolute powervrouw, ervoor gezorgd dat ik me volledig onderdeel voel van de familie. Daar ben ik haar nog elke dag dankbaar voor.",
+        "Wat Hotel Conchiet écht uniek maakt? De 24/7 kledingcrisis-hulpdienst. Geen paniek bij kapotte ritsen of (thema)kledingstress (zoals een regenjas voor op het strand in Rockanje) - en al helemaal niet in aanloop naar carnaval. De directrice herself heeft inmiddels al twee (!) schitterende carnavalsjasjes voor me gemaakt. Niet alleen stijlvol, maar ook met liefde en precisie in elkaar gezet en aangepast op al mijn wensen (zoals Conchiet die natuurlijk zo goed kent).",
+        "Ook op culinair vlak scoort Hotel Mama moeiteloos een Michelinster (of twee of drie). Of het nu een heerlijk verzorgd ontbijt is waar alles tot in de puntjes klopt, of een onverwachte pesto pasta die Conchiet in een handomdraai om 2 uur 's nachts na een avond carnaval voor mij op tafel heeft gezet - de gastvrijheid kent geen grenzen en de maag blijft nooit leeg.",
+        "Wat deze plek nóg bijzonderder maakt: zelfs zonder haar familie ben ik welkom. Met Pasen een aantal jaar geleden kon Pim helaas niet mee. Toch stapte ik zonder Pim de trein in naar Den Bosch en wat volgde was een onvergetelijke Pasen met de familie. Flink wat wijntjes verder, dansend in de kroeg, ben ik met een volle maag en drie (!) flessen wijn onder de arm weer terug naar Amsterdam gereisd. Een klassieke ten out of ten ervaring.",
+        "Kortom: Hotel Conchiet is een plek waar je altijd welkom bent, waar je liefde in alles terugvindt (bijvoorbeeld in de fris gewassen handdoeken die altijd voor je klaar liggen op het heerlijk opgemaakte bed) en waar je wordt behandeld alsof je er altijd al bij hoorde. Niet te vergeten: het hotel beschikt over een hele lieve hond Buddy die altijd in is voor knuffelen! Een verblijf om nooit te vergeten en gelukkig hoef ik nog lang niet uit te checken.",
+        "Liefste Conchiet, dank je wel voor alles. Op naar nog vele jaren in dit prachtige hotel. ❤️"
+      ],
+      rating: 5,
+      image: Chrisfoto
+    },
+    {
+      id: 12,
+      name: "Louis",
+      relation: "Favourite Australian",
+      comment: "Needless to say, my life has changed forever after such a warm and generous stay",
+      fullReview: [
+        "Before staying at Hotel Conchiet for Carnaval, I always thought Jägermeister was strictly for regrettable nights out - not a breakfast staple. How wrong I was. Needless to say, my life has changed forever after such a warm and generous stay. 5 stars. Highly recommend!"
+      ],
+      rating: 5,
+      image: Louisfoto
     }
   ];
 
